@@ -3,7 +3,7 @@ import React from 'react';
 import TodoItem from './TodoItem';
 import { TodoListContainer } from './StyledComponents';
 
-function TodoList({ todos, onToggle, onDelete, onUpdate }) {
+function TodoList({ todos, onToggle, onDelete }) {
   return (
     <TodoListContainer>
       {todos.map((todo) => (
@@ -12,7 +12,6 @@ function TodoList({ todos, onToggle, onDelete, onUpdate }) {
           todo={todo}
           onToggle={onToggle}
           onDelete={onDelete}
-          onUpdate={onUpdate}
         />
       ))}
     </TodoListContainer>
